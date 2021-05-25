@@ -1,0 +1,32 @@
+body{
+    background-color: #E6EFF6;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-card{ /**centralizar**/
+    padding: 0px;
+    box-shadow: 3px;
+    height: 475px;
+    width: 640px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-card{
+    font-family: 'Karla', sans-serif;
+    background-color: #fff;
+    height: 225px;
+    width: 640px;
+}
+
+.sub-card{
+    margin: 0px;
+    padding: 0px;
+    height: 250px;
+    width: 320px;
+    display: block;
+    float: left;
+}
