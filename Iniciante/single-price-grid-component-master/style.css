@@ -1,5 +1,5 @@
 body{
-    background-color: #E6EFF6;
+    background-color: hsl(204, 43%, 93%);
     margin: 0px;
     padding: 0px;
 }
@@ -25,6 +25,8 @@ body{
     height: 100%;
     padding: 0px;
     margin: 0px;
+    font-family: 'Karla', sans-serif;
+    position: relative;
 }
 
 .bottom-card{
@@ -34,6 +36,21 @@ body{
     width: 237px;
     display: block;
     float: left;
+    color: #fff;
+}
+
+.btn-sign{
+    width: 100%;
+    border: 0px;
+    box-shadow: 15px;
+    background-color: #BFDF32;
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
 }
 
 h3, h1{
