@@ -50,17 +50,21 @@ body{
 }
 .bottom-cards .bottom-card:first-child{
     border-bottom-left-radius: 10px;
+    background-color: #2BB3B1;
 }
 .bottom-cards .bottom-card:last-child{
     border-bottom-right-radius: 10px;
+    background-color: #4ABEBD;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .btn-sign{
     width: 100%;
     height: 50px;
-    border: 0px;
+    border: none;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
-    background-color: #BFDF32;
+    background-color: hsl(71, 73%, 54%);
     color: #fff;
     font-family: 'Karla', sans-serif;
     font-size: 16px;
@@ -86,6 +90,10 @@ body{
 
 h3, h1{
     margin-top: 0px;
+}
+
+.opac-text {
+    opacity: 0.8 ;
 }
 
 /**
