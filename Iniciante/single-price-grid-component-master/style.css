@@ -11,6 +11,8 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 100px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .top-card{
@@ -18,6 +20,8 @@ body{
     width: 554px;
     height: 135px;
     background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .content{
@@ -29,6 +33,11 @@ body{
     position: relative;
 }
 
+.bottom-cards{
+    margin: 0px;
+    padding: 0px;
+}
+
 .bottom-card{
     margin: 0px;
     padding: 40px;
@@ -37,20 +46,42 @@ body{
     display: block;
     float: left;
     color: #fff;
+
+}
+.bottom-cards .bottom-card:first-child{
+    border-bottom-left-radius: 10px;
+}
+.bottom-cards .bottom-card:last-child{
+    border-bottom-right-radius: 10px;
 }
 
 .btn-sign{
     width: 100%;
+    height: 50px;
     border: 0px;
-    box-shadow: 15px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
     background-color: #BFDF32;
     color: #fff;
     font-family: 'Karla', sans-serif;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 16px;
     border-radius: 5px;
     position: absolute;
     bottom: 0px;
+    left: 0px;
+}
+
+.price-space{
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    display: flex;
+}
+.price-space span:first-child{
+    font-size: 2em;
+}
+.price-space span:last-child{
+    opacity: 0.5;
+    align-self: center;
+    margin-left: 10px;
 }
 
 h3, h1{
