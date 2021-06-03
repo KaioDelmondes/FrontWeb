@@ -14,7 +14,14 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 100px 10px rgba(0, 0, 0, 0.2);
 }
+
+p {
+    color: hsl(204, 43%, 93%);
+}
+
 
 .content {
     width: 100%;
@@ -32,11 +39,22 @@ main {
     border-top-right-radius: 10px;
 }
 
+.topcard > h1 {
+    color: hsl(179, 62%, 43%);
+}
+.topcard > h3 {
+    color: hsl(71, 73%, 54%);
+}
+.topcard > p {
+    color: hsl(218, 22%, 67%);
+}
+
 #left-bottom-card{
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row: 2;
     background-color: #2BB3B1;
+    color: #FFF;
     padding: 40px;
     border-bottom-left-radius: 10px;
 }
@@ -46,8 +64,34 @@ main {
     grid-column-end: 2;
     grid-row: 2;
     background-color: #4ABEBD;
+    color: #FFF;
     padding: 40px;
     border-bottom-right-radius: 10px;
+}
+
+.btn-sign{
+    width: 100%;
+    height: 50px;
+    border: none;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.price{
+    display: flex;
+}
+
+div.price > span:nth-child(1) {
+    font-size: 2em;
+}
+
+div.price > span:nth-child(2) {
+    opacity: 0.5;
+    margin-left: 10px;
+    align-self: center;
 }
 
 @media only screen and (max-width: 375px) {
