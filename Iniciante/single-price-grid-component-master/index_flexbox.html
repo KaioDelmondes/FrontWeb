@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style_flexbox.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
@@ -18,24 +18,19 @@
   </style>
 </head>
 <body>
-
-  <div class="content centerlized">
-    <div class="wrapper topcard">
-  
-      <div class="col1">
+    
+  <div class="wrapper centerlized">
+    
+      <div class="topcard">
         <h1>Join our community</h1>
         <h3>30-days, hassle-free money back guarantee</h3>
-        <p class="">
+        <p>
           Gain access to our full library of tutorials along with expert code reviews.<br>
           Perfect for any developers who are serious about honing their skills.<br>
         </p>
       </div>
-      
-    </div>
-  
-    <div class="wrapper subcard">
-      
-      <div class="col1">
+        
+      <div id="left-subcard" class="subcard">
         <h3>Monthly Subscription</h3>
           <div class="price">
             <span>$29</span>
@@ -47,9 +42,9 @@
         </button>
       </div>
     
-      <div class="col1">
+      <div id="right-subcard" class="subcard">
         <h3>Why Us</h3>
-        <p class="">
+        <p>
           Tutorials by industry experts<br>
           Peer & expert code reviews<br>
           Coding exercises<br>
@@ -59,8 +54,7 @@
           New videos every week<br>
         </p>
       </div>
-  
-    </div>
+
   </div>
 
 </body>
