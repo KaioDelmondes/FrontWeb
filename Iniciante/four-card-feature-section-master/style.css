@@ -9,6 +9,19 @@ body {
     background-color: hsl(0, 0%, 98%);
 }
 
+header {
+    text-align: center;
+    margin: 90px 0px 60px 0px;
+}
+
+h1 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+h1::first-line {
+    font-weight: 200;
+}
+
 h3 {
     color: hsl(234, 12%, 34%);
 }
@@ -19,26 +32,13 @@ p {
 
 .wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    margin: auto;
+    max-width: fit-content;
 }
 
 .container {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-#left-container {
-    flex-direction: row-reverse;
-}
-
-#mid-container {
-    justify-content: center;
-}
-
-#right-container {
-    
+    align-self: center;
 }
 
 .card {
@@ -80,4 +80,12 @@ hsl(212, 86%, 64%) - Azul
 hsl(234, 12%, 34%) - Azul muito escuro
 hsl(229, 6%, 66%) - Cinza escuro
 hsl(0, 0%, 98%) - Cinza claro
+
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
  */
