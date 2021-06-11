@@ -49,11 +49,18 @@ main > div > img {
     height: auto;
 }
 
-
-footer > div > img {
-    width: 40px;
+footer > div {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    max-width: fit-content;
 }
 
+footer > div  img {
+    max-width: 30px;
+    margin: 0px 5px;
+    
+}
 
 
 @media only screen and (max-width: 375px) {
