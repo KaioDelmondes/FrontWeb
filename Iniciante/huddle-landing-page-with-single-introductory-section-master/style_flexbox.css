@@ -6,8 +6,6 @@
 body {
     padding: 40px;
     margin: 0;
-    width: 100%;
-    height: 100%;
     background-color: hsl(257, 40%, 49%);
     background-repeat: no-repeat;
 }
@@ -17,24 +15,35 @@ header {
     align-items: center;
 }
 
-header > h1 {
+#company-name {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    font-size: 1.9rem;
     margin: 0; 
     padding: 0;
 }
 
-header > img {
+#company-logo {
     width: auto;
     height: 30px;
     margin-right: 5px;
 }
 
-main > h1 {
+.thema {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.mockup-space {
+    margin: 2.5rem 0;
+}
+
+.mockup-space > img {
+    width: 100%;
+    height: auto;
 }
 
 p {
@@ -42,19 +51,60 @@ p {
     font-weight: 400;
     text-align: center;
     font-size: 15px;
+    line-height: 1.5rem;
 }
 
-main > div > img {
-    width: 100%;
-    height: auto;
+button {
+    display: block;
+    margin: 2rem auto 4rem auto;
+    height: 2.5rem;
+    width: 14rem;
+    color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;     
+    font-weight: 400;
+    background-color: #FFF;
+    border: none;
+    border-radius: 1.25rem;
+    box-shadow: 0px .2rem 0.6rem -0.4rem black;
+}
+
+.social-space {
+    display: flex;
+    max-width: fit-content;
+    margin: auto;
 }
 
 
-footer > div > img {
-    width: 40px;
+.social-button {
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
 }
 
+button:hover {
+    color: #FFF;
+    background-color: hsl(300, 69%, 71%);
+}
 
+#fb-button{
+    background: url("images/icon-logo-facebook.png");
+}
+#fb-button:hover{
+    background: url("images/icon-logo-facebook-hover.png");
+}
+
+#twitter-button{
+    background: url("images/icon-logo-twitter.png");
+}
+#twitter-button:hover{
+    background: url("images/icon-logo-twitter-hover.png");
+}
+
+#instagram-button{
+    background: url("images/icon-logo-instagram.png");
+}#instagram-button:hover{
+    background: url("images/icon-logo-instagram-hover.png");
+}
 
 @media only screen and (max-width: 375px) {
     body {
