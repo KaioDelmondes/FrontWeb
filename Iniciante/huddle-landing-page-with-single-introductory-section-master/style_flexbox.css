@@ -7,10 +7,123 @@ body {
     padding: 40px;
     margin: 0;
     background-color: hsl(257, 40%, 49%);
+    background-image: url('./images/bg-mobile.svg');
     background-repeat: no-repeat;
+    max-height: 800px;
 }
 
-header {
+h1 {
+    font-size: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.header {
+    flex: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+#company-logo {
+    width: 30px;
+    margin-right: .5rem;
+}
+
+#company-name {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#mockup {
+    flex: 3;
+    padding-right: 1.8rem;
+}
+
+.description {
+    flex: 2;
+    padding: 1rem 0 0 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.description > h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.description > p {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+#register-btn {
+    display: block;
+    height: 3rem;
+    width: 14rem;
+    color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;     
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: #FFF;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0px .2rem 0.6rem -0.4rem black;
+}
+
+#register-btn:hover {
+    color: #FFF;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.footer{
+    margin-left: auto;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-self: center;
+}
+
+.social-button {
+    width: 3rem;
+    height: 3rem;
+    margin-left: .5rem;
+}
+
+#fb-button{
+    background: url("images/icon-logo-facebook.svg");
+    background-size: contain;
+}
+#fb-button:hover{
+    background: url("images/icon-logo-facebook-hover.svg");
+    background-size: contain;
+}
+
+#twitter-button{
+    background: url("images/icon-logo-twitter.svg");
+    background-size: contain;
+}
+#twitter-button:hover{
+    background: url("images/icon-logo-twitter-hover.svg");
+    background-size: contain;
+}
+
+#instagram-button{
+    background: url("images/icon-logo-instagram.svg");
+    background-size: contain;
+}
+#instagram-button:hover{
+    background: url("images/icon-logo-instagram-hover.svg");
+    background-size: contain;
+}
+
+@media only screen and (min-width: 376px) {
+    body {
+        background-image: url('./images/bg-desktop.svg');
+    }
+}
+/* header {
     display: flex;
     align-items: center;
 }
@@ -104,13 +217,8 @@ button:hover {
     background: url("images/icon-logo-instagram.png");
 }#instagram-button:hover{
     background: url("images/icon-logo-instagram-hover.png");
-}
+} */
 
-@media only screen and (max-width: 375px) {
-    body {
-        background-image: url('./images/bg-mobile.svg');
-    }
-}
 /* 
 Cores: 
 hsl(257, 40%, 49%) -- Violeta
