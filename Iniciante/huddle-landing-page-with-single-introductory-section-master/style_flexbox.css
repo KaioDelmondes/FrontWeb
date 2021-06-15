@@ -8,7 +8,7 @@ body {
     margin: 0;
     background-color: hsl(257, 40%, 49%);
     background-image: url('./images/bg-mobile.svg');
-    background-repeat: no-repeat;
+    background-size: cover;
     max-height: 800px;
 }
 
@@ -20,6 +20,13 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: calc(100vh - 18rem);
 }
 
 .header {
@@ -41,7 +48,8 @@ h1 {
 }
 
 #mockup {
-    flex: 3;
+    height: 100%;
+    flex-grow: 0;
     padding-right: 1.8rem;
 }
 
@@ -81,8 +89,11 @@ h1 {
 .footer{
     margin-left: auto;
     display: flex;
-    flex-flow: row-reverse wrap;
+    flex-flow: row wrap;
     justify-self: center;
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
 }
 
 .social-button {
@@ -118,9 +129,23 @@ h1 {
     background-size: contain;
 }
 
-@media only screen and (min-width: 376px) {
+@media only screen and (max-width: 375px) {
     body {
-        background-image: url('./images/bg-desktop.svg');
+        background-image: url('./images/bg-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: none;
+    }
+    #mockup {
+        height: unset
+        flex-grow: 0;
+        padding-right: 1.8rem;
     }
 }
 /* header {
