@@ -212,19 +212,6 @@ button {
     margin: auto;
 }
 
-<<<<<<< HEAD
-footer > div {
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
-    max-width: fit-content;
-}
-
-footer > div  img {
-    max-width: 30px;
-    margin: 0px 5px;
-    
-=======
 
 .social-button {
     width: 30px;
@@ -235,7 +222,6 @@ footer > div  img {
 button:hover {
     color: #FFF;
     background-color: hsl(300, 69%, 71%);
->>>>>>> 6dfe96d243abdb47222139d645f66a710217baf7
 }
 
 #fb-button{
