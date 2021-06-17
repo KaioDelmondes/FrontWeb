@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo-icon {
+    height: auto;
+    margin-right: 0.2rem;
+}
+
+#logo-name {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0%;
+}
+
+.main {
+    display: flex;
+}
+
+.content {
+    font-family: 'Poppins', sans-serif;
+}
+
+.description {
+    color: #FFF;
+}
+
+.description > h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.description > p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#register-btn {
+    background-color: #FFF;
+    color: hsl(257, 40%, 49%);
+    border: none;
+}
+
+#register-btn:hover {
+    color: #FFF;
+    background-color: hsl(300, 69%, 71%);
+}
+
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background-image: url('./images/bg-desktop.svg');
+        background-repeat: no-repeat;
+    }
+
+    .wrapper {
+        margin: 4rem 5rem;
+    }
+
+    #logo-icon {
+        max-width: 2.8rem;
+    }
+
+    #logo-name {
+        font-size: 3rem;
+    }
+    
+    #mockup {
+        margin-right: 3.75rem;
+    }
+
+    #register-btn {
+        width: 12.5rem;
+        height: 3.5rem;
+        font-size: 1rem;
+        border-radius: 1.75rem;
+        box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.25);
+    }
+}
