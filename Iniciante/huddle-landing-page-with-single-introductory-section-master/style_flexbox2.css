@@ -43,13 +43,18 @@ body {
 }
 
 .description > h1 {
+    margin-top: 0;
+}
+
+.description > h1 {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2.375rem;
 }
 
 .description > p {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
 }
 
 #register-btn {
@@ -63,6 +68,47 @@ body {
     background-color: hsl(300, 69%, 71%);
 }
 
+.footer{
+    position: relative;
+}
+
+.social-buttons {
+    position: absolute;
+    right: 5rem;
+}
+
+.social-buttons > button {
+    border: none;
+    background-color: transparent;
+}
+
+.social-buttons > button+button {
+    margin-left: .5rem;
+}
+
+#fb-button {
+    background-image: url('./images/icon-logo-facebook.svg');
+    background-size: contain;
+}
+#fb-button:hover {
+    background-image: url('./images/icon-logo-facebook-hover.svg');
+}
+
+#twitter-button {
+    background-image: url('./images/icon-logo-twitter.svg');
+    background-size: contain;
+}
+#twitter-button:hover {
+    background-image: url('./images/icon-logo-twitter-hover.svg');
+}
+
+#instagram-button {
+    background-image: url('./images/icon-logo-instagram.svg');
+    background-size: contain;
+}
+#instagram-button:hover {
+    background-image: url('./images/icon-logo-instagram-hover.svg');
+}
 
 @media only screen and (min-width: 1440px) {
     body {
@@ -71,7 +117,8 @@ body {
     }
 
     .wrapper {
-        margin: 4rem 5rem;
+        max-width: 1250px;
+        margin: 4rem auto auto auto;
     }
 
     #logo-icon {
@@ -81,9 +128,17 @@ body {
     #logo-name {
         font-size: 3rem;
     }
+
+    .main {
+        margin-top: 4rem;
+    }
     
     #mockup {
         margin-right: 3.75rem;
+    }
+
+    .description {
+        margin-top: 2.5rem;
     }
 
     #register-btn {
@@ -92,5 +147,11 @@ body {
         font-size: 1rem;
         border-radius: 1.75rem;
         box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.25);
+    }
+
+
+    .social-buttons > button {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
