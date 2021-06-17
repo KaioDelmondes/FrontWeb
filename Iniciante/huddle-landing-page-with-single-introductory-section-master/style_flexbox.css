@@ -6,35 +6,182 @@
 body {
     padding: 40px;
     margin: 0;
-    width: 100%;
-    height: 100%;
     background-color: hsl(257, 40%, 49%);
-    background-repeat: no-repeat;
+    background-image: url('./images/bg-mobile.svg');
+    background-size: cover;
+    max-height: 800px;
 }
 
-header {
+h1 {
+    font-size: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: calc(100vh - 18rem);
+}
+
+.header {
+    flex: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+#company-logo {
+    width: 30px;
+    margin-right: .5rem;
+}
+
+#company-name {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#mockup {
+    height: 100%;
+    flex-grow: 0;
+    padding-right: 1.8rem;
+}
+
+.description {
+    flex: 2;
+    padding: 1rem 0 0 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.description > h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.description > p {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+#register-btn {
+    display: block;
+    height: 3rem;
+    width: 14rem;
+    color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;     
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: #FFF;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0px .2rem 0.6rem -0.4rem black;
+}
+
+#register-btn:hover {
+    color: #FFF;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.footer{
+    margin-left: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-self: center;
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+}
+
+.social-button {
+    width: 3rem;
+    height: 3rem;
+    margin-left: .5rem;
+}
+
+#fb-button{
+    background: url("images/icon-logo-facebook.svg");
+    background-size: contain;
+}
+#fb-button:hover{
+    background: url("images/icon-logo-facebook-hover.svg");
+    background-size: contain;
+}
+
+#twitter-button{
+    background: url("images/icon-logo-twitter.svg");
+    background-size: contain;
+}
+#twitter-button:hover{
+    background: url("images/icon-logo-twitter-hover.svg");
+    background-size: contain;
+}
+
+#instagram-button{
+    background: url("images/icon-logo-instagram.svg");
+    background-size: contain;
+}
+#instagram-button:hover{
+    background: url("images/icon-logo-instagram-hover.svg");
+    background-size: contain;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url('./images/bg-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: none;
+    }
+    #mockup {
+        height: unset;
+        flex-grow: 0;
+        padding-right: 1.8rem;
+    }
+}
+/* header {
     display: flex;
     align-items: center;
 }
 
-header > h1 {
+#company-name {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    font-size: 1.9rem;
     margin: 0; 
     padding: 0;
 }
 
-header > img {
+#company-logo {
     width: auto;
     height: 30px;
     margin-right: 5px;
 }
 
-main > h1 {
+.thema {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.mockup-space {
+    margin: 2.5rem 0;
+}
+
+.mockup-space > img {
+    width: 100%;
+    height: auto;
 }
 
 p {
@@ -42,13 +189,30 @@ p {
     font-weight: 400;
     text-align: center;
     font-size: 15px;
+    line-height: 1.5rem;
 }
 
-main > div > img {
-    width: 100%;
-    height: auto;
+button {
+    display: block;
+    margin: 2rem auto 4rem auto;
+    height: 2.5rem;
+    width: 14rem;
+    color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;     
+    font-weight: 400;
+    background-color: #FFF;
+    border: none;
+    border-radius: 1.25rem;
+    box-shadow: 0px .2rem 0.6rem -0.4rem black;
 }
 
+.social-space {
+    display: flex;
+    max-width: fit-content;
+    margin: auto;
+}
+
+<<<<<<< HEAD
 footer > div {
     display: flex;
     flex-flow: row wrap;
@@ -60,14 +224,40 @@ footer > div  img {
     max-width: 30px;
     margin: 0px 5px;
     
+=======
+
+.social-button {
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
 }
 
-
-@media only screen and (max-width: 375px) {
-    body {
-        background-image: url('./images/bg-mobile.svg');
-    }
+button:hover {
+    color: #FFF;
+    background-color: hsl(300, 69%, 71%);
+>>>>>>> 6dfe96d243abdb47222139d645f66a710217baf7
 }
+
+#fb-button{
+    background: url("images/icon-logo-facebook.png");
+}
+#fb-button:hover{
+    background: url("images/icon-logo-facebook-hover.png");
+}
+
+#twitter-button{
+    background: url("images/icon-logo-twitter.png");
+}
+#twitter-button:hover{
+    background: url("images/icon-logo-twitter-hover.png");
+}
+
+#instagram-button{
+    background: url("images/icon-logo-instagram.png");
+}#instagram-button:hover{
+    background: url("images/icon-logo-instagram-hover.png");
+} */
+
 /* 
 Cores: 
 hsl(257, 40%, 49%) -- Violeta
