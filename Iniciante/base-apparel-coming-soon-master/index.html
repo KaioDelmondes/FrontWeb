@@ -10,6 +10,8 @@
 
   <link rel="stylesheet" href="./style.css">
 
+  <script src="script.js"></script>
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
@@ -23,6 +25,11 @@
         <div id="logo">
           <img src="./images/logo.svg" alt="">
         </div>
+    
+        <div id="model-mobile">
+          <img src="./images/hero-mobile.jpg" alt="Model">
+        </div>
+    
         <div id="release-notice">
           <h1>
             WE'RE COMING SOON
@@ -33,17 +40,19 @@
             announcements and our launch deals.
           </p>
         </div>
-        <div id="email-input">
-          <input type="text" placeholder="Email Address">
-          <button>
+        <div id="email-space">
+          <input name="email-input" type="text" placeholder="Email Address">
+          <button onclick="invalid()">
             <img src="./images/icon-arrow.svg" alt="Submit">
           </button>
         </div>
       </div>
     </div>
-    <div id="model-photo-space">
+
+    <div id="model-desktop">
       <img src="./images/hero-desktop.jpg" alt="Model">
     </div>
+    
   </div>
 
 </body>
