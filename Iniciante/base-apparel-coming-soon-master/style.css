@@ -1,29 +1,101 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
-}
-
-#background {
-    background-image: linear-gradient(135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%));
-    background-repeat: no-repeat;
-    position: fixed;
-    z-index: -99;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .wrapper {
     display: flex;
-    flex-direction: row;
 }
 
-@media only screen and (min-width: 1440px) {
-    .wrapper {
-        max-height: 800px;
+#presentation-space {
+    width: 830px;
+    height: 800px;
+    background-image: url('./images/bg-pattern-desktop.svg'), linear-gradient(135deg, hsl(0, 100%, 100%), hsl(0, 100%, 98%));
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+}
+
+#release-notice > h1 {
+    margin: 0;
+    padding: 0;
+    color: hsl(360, 6%, 24%);
+    font-weight: 600;
+}
+#release-notice > h1::first-line {
+    color: hsl(360, 36%, 79%);
+    font-weight: 300;
+}
+#release-notice > p {
+    margin: 0;
+    padding: 0;
+    color:hsla(360, 36%, 70%, 1);
+    font-weight: 400;
+}
+
+#email-input {
+    position: relative;
+}
+
+#email-input > input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+}
+#email-input > input[type="text" i]{
+    padding-left: 22px;
+}
+#email-input > input::placeholder {
+    color: hsla(360, 36%, 70%, 1);
+}
+
+#email-input > button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border: none;
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+
+@media only screen and (max-width: 1440px){
+    #presentation-space > div {
+        margin: 66px 209px 123px 166px;
     }
-    
+
+    #release-notice {
+        margin-top: 138px;
+    }
+    #release-notice > h1{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    #release-notice > p {
+        margin-top: 40px;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0px;
+    }
+
+    #email-input {
+        margin-top: 50px;
+        width: 455px;
+        height: 56px;
+    }
+
+    #email-input > input {
+        border-radius: 28px;
+        border: hsla(360, 36%, 70%, 1) 1px solid;
+    }
+
+    #email-input > button {
+        border-radius: 28px;
+        width: 100px;
+    }
 }
