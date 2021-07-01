@@ -10,8 +10,6 @@
 
   <link rel="stylesheet" href="./style.css">
 
-  <script src="script.js"></script>
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
@@ -40,12 +38,16 @@
             announcements and our launch deals.
           </p>
         </div>
-        <div id="email-space">
-          <input name="email-input" type="text" placeholder="Email Address">
-          <button onclick="invalid()">
-            <img src="./images/icon-arrow.svg" alt="Submit">
-          </button>
-        </div>
+        <form id="email-space" action="">
+          <input id="email-input" class="valid-input" type="text" placeholder="Email Address">
+          <div>
+            <img id="error-icon" src="./images/icon-error.svg" alt="">
+            <button id="signin-btn" type="button" class="valid-btn">
+              <img src="./images/icon-arrow.svg" alt="Submit">
+            </button>
+          </div>
+          <span id="error-msg"></span>
+        </form>
       </div>
     </div>
 
@@ -56,4 +58,5 @@
   </div>
 
 </body>
+<script src="main.js"></script>
 </html>

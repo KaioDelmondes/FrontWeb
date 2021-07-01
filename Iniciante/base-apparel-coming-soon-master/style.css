@@ -45,28 +45,59 @@ body {
     position: relative;
 }
 
-#email-space > input{
+#email-input{
     width: 100%;
     height: 100%;
     background-color: transparent;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
+    border-radius: 28px;
 }
-#email-space > input[type="text" i]{
+#email-input[type="text" i]{
     padding-left: 22px;
 }
-#email-space > input::placeholder {
+#email-input::placeholder {
     color: hsla(360, 36%, 70%, 1);
 }
 
-#email-space > button {
+.valid-input {
+    border: hsla(360, 36%, 70%, 1) 1px solid;
+}
+
+#email-space > div {
+    display: inline;
     position: absolute;
+    top: 0;
     right: 0;
     height: 100%;
+}
+
+#error-icon {
+    display: none;
+}
+
+#error-msg {
+    color: hsla(360, 26%, 70%, 1);
+    font-size: .875rem;
+    margin-left: 22px;
+}
+
+#signin-btn {
     border: none;
+    height: 100%;
+}
+
+.invalid-input {
+    border: 2px solid #F96464;
+}
+
+.valid-btn {
     background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
+.invalid-btn {
+    background-image: linear-gradient(270deg, #FADADA 0%, rgba(250, 200, 200, 0) 100%);
+}
 
 @media only screen and (max-width: 1440px){
     #presentation-space > div {
@@ -89,18 +120,18 @@ body {
 
     #email-space {
         margin-top: 50px;
+        margin-bottom: 10px;
         width: 455px;
         height: 56px;
     }
 
-    #email-space > input {
-        border-radius: 28px;
-        border: hsla(360, 36%, 70%, 1) 1px solid;
-    }
-
-    #email-space > button {
+    #signin-btn {
         border-radius: 28px;
         width: 100px;
+    }
+
+    #email-input {
+        margin-bottom: 10px;
     }
 }
 
@@ -153,13 +184,13 @@ body {
         height: 48px;
     }
 
-    #email-space > input {
-        border-radius: 28px;
-        border: hsla(360, 36%, 70%, 1) 1px solid;
-    }
-
-    #email-space > button {
+    #signin-btn {
         border-radius: 28px;
         width: 64px;
+    }
+
+    
+    #email-input {
+        margin-bottom: 12px;
     }
 }
