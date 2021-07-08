@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="description container">
+      <h1>
+        Learn to code by watching others
+      </h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable
+      </p>
+    </div>
+  
+    <div class="container">
+      <div class="header1">
+        <span>Try it free 7 days</span> then $20/mo. thereafter
+      </div>
+
+      <form action="" class="formulario">
+        <div class="formCel">
+          <div class="inputSpace">
+            <input name="first-name" type="text" placeholder="First Name" class="formComponent">
+            <img src="./images/icon-error.svg" id="fn-error" class="inputErrorIcon">
+          </div>
+          <span id="fn-warn" class="inputErrorMsg"></span>
+        </div>
+
+        <div class="formCel">
+          <div class="inputSpace">
+            <input name="last-name" type="text" placeholder="Last Name" class="formComponent">
+            <img src="./images/icon-error.svg" id="ln-error" class="inputErrorIcon">
+          </div>
+          <span id="ln-warn" class="inputErrorMsg"></span>
+        </div>
+
+        <div class="formCel">
+          <div class="inputSpace">
+            <input name="email" type="text" placeholder="Email Address" class="formComponent">
+            <img src="./images/icon-error.svg" id="email-error" class="inputErrorIcon">
+          </div>
+          <span id="email-warn" class="inputErrorMsg"></span>
+        </div>
+
+        <div class="formCel">
+          <div class="inputSpace">
+            <input name="password" type="password" placeholder="Password" class="formComponent">
+            <img src="./images/icon-error.svg" id="pw-error" class="inputErrorIcon">
+          </div>
+          <span id="pw-warn" class="inputErrorMsg"></span>
+        </div>
+
+        <div class="formCel">
+          <div class="inputSpace">
+            <button id="btn-register" type="button" class="formComponent">
+              CLAIM YOUR FREE TRIAL
+            </button>
+          </div>
+        </div>
+
+
+        <div id="termsWarn">
+          By clicking the button you are agreeing to our <span>Terms and Services</span>
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+<script src="main.js"></script>
+</html>

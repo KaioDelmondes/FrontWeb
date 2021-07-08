@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: hsla(360, 100%, 74%, 1);
+    font-family: 'Poppins';
+    color: #FFFFFF;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: inherit;
+}
+
+.container {
+    flex: 1;
+    flex-basis: 350px;
+}
+
+.header1 {
+    background-color: hsla(248, 32%, 49%, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.635rem;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.header1 > span {
+    font-weight: 700;
+}
+
+.formulario {
+    background-color: #FFFFFF;
+    border-radius: 0.625rem;
+    margin-top: 1.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.formCel {
+    margin-bottom: 20px;
+}
+
+.formCel > span {
+    display: block;
+    text-align: right;
+}
+
+.inputSpace {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.formComponent {
+    font-family: 'Poppins';
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 1rem;
+    grid-column: 1 / 5;
+    grid-row: 1;
+}
+input {
+    border: 1px solid #DCDCDC;
+}
+input::placeholder {
+    color: hsla(246, 25%, 77%, 1);
+}
+
+.inputErrorIcon {
+    display: none;
+    grid-row: 1;
+    grid-column: -1;
+    margin-right: .5rem;
+}
+
+.inputErrorMsg { 
+    color: rgba(255, 122, 122, 1);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+#btn-register {
+    border: none;
+    background-color: hsla(154, 59%, 51%, 1);
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+#termsWarn {
+    color: hsla(246, 25%, 77%, 1);
+    font-size: 0.625rem;
+    text-align: center;
+}
+#termsWarn > span {
+    color: hsla(360, 100%, 74%, 1);
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url('./images/bg-intro-mobile.png');
+        background-size: cover;
+        padding: 1.5rem;
+    }
+
+    h1, p, .header1 {
+        text-align: center;
+    }
+
+    .formulario {
+        padding: 2.5rem 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 376px) {
+    body {
+        background-image: url('./images/bg-intro-desktop.png');
+        background-size: cover;
+        padding: 0 10%;
+        height: 100vh;
+    }
+
+    .wrapper {
+        margin-top: auto;
+    }
+
+    .description {
+        margin-right: 2rem;
+    }
+
+
+    .formulario {
+        padding: 2.5rem;
+    }
+}
